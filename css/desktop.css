@@ -1,0 +1,125 @@
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --accent-overlay: hsla(277, 64%, 61%, 0.592);
+  --main-heading-stats: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+  --Font: 15px;
+}
+
+body {
+  background-color: var(--main-background);
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+body h1 {
+  color: var(--main-heading-stats);
+}
+body span {
+  color: var(--accent);
+}
+body p {
+  color: var(--main-paragraph);
+}
+body .card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  max-width: 90%;
+  height: 350px;
+  position: relative;
+  top: 150px;
+  left: 5%;
+}
+body .card .hero {
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  float: right;
+  display: block;
+  width: 45%;
+  min-height: 350px;
+}
+body .card .hero .overlay {
+  background-color: var(--accent-overlay);
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+body .card .hero .mobile {
+  display: none;
+}
+body .card .hero .desktop {
+  border-radius: 0 10px 10px 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .card .txts {
+  position: relative;
+  display: inline-block;
+  left: 6%;
+  max-width: 40%;
+  max-height: 100%;
+  margin-top: 4%;
+  padding: 0;
+}
+body .card .txts h1 {
+  display: inline-block;
+  margin: 10px 0;
+}
+body .card .txts .header {
+  width: 90%;
+}
+body .card .txts .paragraph {
+  width: 80%;
+}
+body .card .txts p {
+  margin: 0;
+  padding-top: 15px;
+}
+body .card .txts .lists {
+  position: static;
+  padding-top: 30px;
+  text-align: left;
+}
+body .card .txts .lists .companies {
+  display: inline-block;
+  margin-right: 20px;
+}
+body .card .txts .lists .companies h1 {
+  margin: 0;
+}
+body .card .txts .lists .companies p {
+  margin: 0;
+  padding: 5px 0;
+}
+body .card .txts .lists .templates {
+  display: inline-block;
+  margin: 0 20px;
+}
+body .card .txts .lists .templates h1 {
+  margin: 0;
+}
+body .card .txts .lists .templates p {
+  margin: 0;
+  padding: 5px 0;
+}
+body .card .txts .lists .queries {
+  display: inline-block;
+  margin-left: 20px;
+}
+body .card .txts .lists .queries h1 {
+  margin: 0;
+}
+body .card .txts .lists .queries p {
+  margin: 0;
+  padding: 5px 0;
+}/*# sourceMappingURL=desktop.css.map */

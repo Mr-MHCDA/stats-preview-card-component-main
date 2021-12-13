@@ -1,0 +1,109 @@
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --accent-overlay: hsla(277, 64%, 61%, 0.592);
+
+  --main-heading-stats: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 3%, 44%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+
+  --Font: 15px;
+}
+
+body {
+  background-color: var(--main-background);
+  display: flex;
+  font-size: var(--font-size);
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  .card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    max-width: 340px;
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+
+    h1 {
+      color: var(--main-heading-stats);
+    }
+
+    span {
+      color: var(--accent);
+    }
+
+    p {
+      color: var(--main-paragraph);
+    }
+
+    .hero {
+      position: relative;
+      .overlay {
+        background-color: var(--accent-overlay);
+        border-radius: 10px 10px 0 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 249.54px;
+        z-index: 1;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        width: 340px;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+
+    .txts {
+      padding: 10px;
+      h1 {
+        color: var(--main-heading-stats);
+
+        padding: 0 10%;
+      }
+
+      p {
+        padding: 0 10%;
+        line-height: 25px;
+      }
+
+      .lists {
+        padding-bottom: 5px;
+        text-transform: uppercase;
+
+        h1 {
+          margin: 5px 0;
+        }
+
+        p {
+          margin: 5px 0;
+        }
+      }
+
+      .companies {
+        padding: 15px 0;
+      }
+
+      .templates {
+        padding: 15px 0;
+      }
+
+      .queries {
+        padding: 15px 0;
+      }
+    }
+  }
+}
